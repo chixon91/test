@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<title>Christopher Hixon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-white w3-wide w3-padding-8 w3-card-2">
+    <li>
+      <a href="#home" class="w3-margin-left"><b>Christopher</b> Hixon </a>
+    </li>
+    <!-- Float links to the right. Hide them on small screens -->
+    <li class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-left">Projects</a>
+	  <a href="#projects" class="w3-left">Education</a>
+      <a href="#about" class="w3-left">About</a>
+      <a href="#contact" class="w3-left w3-margin-right">Contact</a>
+    </li>
+  </ul>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px" id="home">
+  <img class="w3-image" src="dove.png" alt="Architecture" width="564" height="667">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge"><span class="w3-border w3-border-black w3-padding" >CH</span> <span class="w3-hide-small" >Portfolio</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Projects</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Real Estate</div>
+        <img src="house.png" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Finance</div>
+        <img src="coin.png" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Health</div>
+        <img src="heart.png" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Business</div>
+     <a href="business.html">   <img src="retail.png" alt="House" style="width:100%"> </a>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Who is HE?</h3>
+    <p>I'm just a young man seeking a work environment where self-improvement and learning happen continually to make individual development and growth a priority. 
+	I am an attentive, service driven, goal oriented, innovative work ethic, dependable and well organized individual. 
+	In search of an opportunity to provide speedy and thorough reports, support, and services to customers. 
+	Willing to learn and look for solutions.
+    </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="chris1.jpeg" alt="John" style="width:100%">
+      <h3>Christopher Hixon</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>1601 Sparkman Drive Apt 101  ⋅   Huntsville, AL 35816  ⋅   (256) 924-5016   ⋅   cjhxn68@gmail.com
+</p>
+      <p><button class="w3-btn-block">View More</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="Chris3.jpeg" alt="Jane" style="width:100%">
+      <h3>Education</h3>
+      <p class="w3-opacity">Overview</p>
+      <p>B.S. in Business Administration
+		Alabama A&M University - Normal, AL    
+		August 2010 to May 2015
+.</p>
+      <p><button class="w3-btn-block">View More</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="chris4.jpeg" alt="Mike" style="width:100%">
+      <h3>Work History</h3>
+      <p class="w3-opacity">Overview</p>
+      <p><b>Delivery Driver</b>	December 2014- Present
+New China
+<br>
+<b>System Technician</b>		August 2015- Present
+Alatec/United Solutions Initiative, LLC 
+<br>
+
+<b>Customer Retention Group Agent</b>
+DirecTV 									March 2013 to August 2014
+<br>
+
+
+<b>Crew Member</b>
+McDonald's 								October 2011 to March 2013
+</p>
+      </p>
+      <p><button class="w3-btn-block">View More</button></p>
+    </div>
+	
+	
+	
+	
+
+<!-- Google Map -->
+<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Created By <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">CHMM</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+<!-- Google Map Location -->
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+</body>
+</html>
+
+
